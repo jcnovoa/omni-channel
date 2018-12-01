@@ -1,7 +1,7 @@
 global:
   marketplace-ami: false
-  owner: quickstart@amazon.com
-  qsname: connect-integration-examples
+  owner: jcnovoa@hotmail.com
+  qsname: connect-integration
   regions:
   - us-east-1
   reporting: true
