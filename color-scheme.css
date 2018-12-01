@@ -1,0 +1,20 @@
+/************************************************* 
+* Primary Accent Scheme with a contrast color of white 
+* Reccommend to use the following colors: https://tailwindcss.com/docs/colors
+*************************************************/
+:root {
+    --accent-color: #54B145;
+    --accent-color-dark: #1F9D55;
+}
+.text-color-scheme {
+	color: var(--accent-color);
+}
+.bg-color-scheme {
+	background: var(--accent-color);
+}
+.border-color-scheme {
+	border-color: var(--accent-color);
+}
+.border-color-scheme-dark {
+	border-color: var(--accent-color-dark);
+}

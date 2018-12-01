@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Omnichannel Demo Homepage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="color-scheme.css">
+ </head>
+
+<body>
+	<div class="bg-wrapper container mx-auto h-screen relative">
+		<div class="chat-wrapper shadow-lg rounded-b-lg">
+			<div class="bg-color-scheme text-white p-3 text-center rounded-t-lg flex items-center justify-center">
+				<h2>Virtual Agent</h2>
+				<p class="mt-2 text-sm"></p>
+			</div>
+
+			<div id="conversation" class="conversation p-6 bg-grey-light"></div>
+
+			<form id="chatform" class="chatForm flex px-3 py-4 bg-grey-lighter rounded-b-lg" onsubmit="return pushChat();">
+				<input class="flex-grow p-3 w-full rounded-l-lg border border-grey-light" 
+					   type="text" id="wisdom" size="80" value="" placeholder="Type your message here">
+				<button type="submit" class="flex-1 bg-color-scheme text-white rounded-r-lg px-4">Post</button>
+			</form>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
+    <script src="index.js"></script>        
+</body> 
+</html>

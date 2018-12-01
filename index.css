@@ -1,0 +1,89 @@
+
+body  {
+    background: #ececec;
+}
+
+.bg-wrapper {
+    background-image: url("images/client-background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.chat-wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+    width: 400px;
+}
+
+.conversation {
+    width: 100%; 
+    height: 420px;
+    overflow: scroll;
+    background-image: linear-gradient(#ffffff, #f1f5f8);
+}
+
+.chatForm {
+    width: 100%;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+p.userRequest {
+    border-radius: 0.75rem 0.75rem 0rem 0.75rem;
+    padding: .75rem .5rem;
+    margin-right: 5px;
+    min-width: 50%;
+    max-width: 80%;
+    text-align: center;
+}
+
+p.lexResponse {
+    border-radius: 0.75rem 0.75rem 0.75rem 0;
+    padding: .75rem .5rem;
+    margin-left: 5px; 
+    min-width: 50%;
+    max-width: 80%;
+    text-align: center;
+}
+
+p.lexError {
+    margin-bottom: .75rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    background-color: #E3342F;
+}
+
+span.checkbox {
+    justify-content: flex-start;
+    background: #ffffff;
+}
+
+span.checkbox.active {
+    justify-content: flex-end;
+    background: #51D88A;
+}
+
+
+/* ANIMATION */
+.checkboxDiv,
+.lexResponseDiv,
+.userResponseDiv {
+    opacity: 0;
+    animation: animate_opacity .333s forwards .333s ease-in;
+}
+
+@keyframes animate_opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
