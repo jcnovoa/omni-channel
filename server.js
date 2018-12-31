@@ -4,7 +4,7 @@ var querystring = require('querystring');
 var fs = require('fs');
 
 http.createServer(function(req, res) {
-  pathName = url.parse(req.url).pathname;
+  var pathName = url.parse(req.url).pathname;
   
   fs.readFile(__dirname + pathName, function(err, data){
     if(err){
@@ -18,6 +18,6 @@ http.createServer(function(req, res) {
           res.write(data);
           res.end();  
        }
-  })
+  });
 }).listen(80);
 console.log('Server ready');
